@@ -6,9 +6,9 @@ LVOS is a benchmark for long-term video object segmentation. LVOS consists of 22
 
 ## Dataset
 
-Download LVOS dataset from Google Drive ( <a href="https://drive.google.com/file/d/1En4jfVoMJpT0XWhKe1QmG-m49OAYcdw0/view?usp=share_link">Train</a> | <a href="https://drive.google.com/file/d/1pvpsfA3BcBIjNNQV3j7aqsCkCDlgJXDP/view?usp=share_link">Eval</a> | <a href="https://drive.google.com/file/d/1qVlrTkhvpByAaHzPFwDmfEmM8tBRMhWd/view?usp=share_link"> Test</a> ), Baidu Drive ( <a href="https://pan.baidu.com/s/1WEOXuO8O5Gzg_y5QU5JxSw?pwd=c7bn">Train</a> | <a href="https://pan.baidu.com/s/1ncBi_uMYoqQdsb75mXWJkA?pwd=009x">Eval</a> | <a href="https://pan.baidu.com/s/1ttC9Eoc7vHVA5jyxIRrVug?pwd=3hkb">Test</a> ), or Kaggle (<a href="https://www.kaggle.com/datasets/lingyihong/longterm-vos?select=Test">Train</a> | <a href="https://www.kaggle.com/datasets/lingyihong/longterm-vos?select=Test">Eval</a> | <a href="https://www.kaggle.com/datasets/lingyihong/longterm-vos?select=Test">Test</a>).
+Download LVOS dataset from Google Drive ( <a href="https://drive.google.com/file/d/1pdA1Y7-VE4coj6yacya-kolZs6hKuQpS/view?usp=share_link">Train</a> | <a href="https://drive.google.com/file/d/15qvcQNlRYgbx4WQ7rTeIMPqga0OwPJf-/view?usp=share_link">Eval</a> | <a href="https://drive.google.com/file/d/1DOmcomku4uh7_T-7Xyy1jXxquDc9XIaf/view?usp=share_link"> Test</a> ), Baidu Drive ( <a href="https://pan.baidu.com/s/1DUB27_fJO1iNmRfTYjjLkw?pwd=nff5">Train</a> | <a href="https://pan.baidu.com/s/1XAuBUvD2GFcbavVQyzgpdg?pwd=y1kr">Eval</a> | <a href="https://pan.baidu.com/s/1ObwZPfr2brPCmJ9MV89Neg?pwd=awlh">Test</a> ), or Kaggle (<a href="https://www.kaggle.com/datasets/lingyihong/longterm-vos?select=Test">Train</a> | <a href="https://www.kaggle.com/datasets/lingyihong/longterm-vos?select=Test">Eval</a> | <a href="https://www.kaggle.com/datasets/lingyihong/longterm-vos?select=Test">Test</a>).
 
-After unzipping image data, please download meta jsons from <a href="https://drive.google.com/drive/folders/1faJvd2O1qei7eeaZogbYO3NrXOmq6Hkg?usp=share_link"> Google Drive </a> | <a href="https://pan.baidu.com/s/1Il3YVpw7-A7-gaV99ylsrA?pwd=um4p"> Baidu Drive</a> | <a href="https://www.kaggle.com/datasets/lingyihong/longterm-vos?select=Test"> Kaggle </a> and put them under corresponding floder.
+After unzipping image data, please download meta jsons from <a href="https://drive.google.com/drive/folders/1fOwGggoYNm_GkZIxs68ptHLk4JNF4Ebq?usp=share_link"> Google Drive </a> | <a href="https://pan.baidu.com/s/1_nrMI1cg0X8pt6_GTsRt-w?pwd=osrv"> Baidu Drive</a> | <a href="https://www.kaggle.com/datasets/lingyihong/longterm-vos?select=Test"> Kaggle </a> and put them under corresponding floder.
 
 
 
@@ -30,6 +30,30 @@ Organize as follows:
     |-- ...
 |-- test
     |-- ...
+
+
+x_meta.json
+    {
+        "videos": {
+            "<video_id>": {
+                "objects": {
+                    "<object_id>": {
+                        "frame_range": {
+                            "start": <start_frame>,
+                            "end": <end_frame>,
+                            "frame_nums": <frame_nums>
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+# <object_id> is the same as the pixel values of object in annotated segmentation PNG files.
+# <frame_id> is the 5-digit index of frame in video, and not necessary to start from 0.
+# <start_frame> is the  start frame id of target object.
+# <end_frame> is the  end frame id of target object.
+# <frame_nums> is the number of existing frames of target object.
 ```
 
 ## Evaluation
