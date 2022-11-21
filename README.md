@@ -62,7 +62,7 @@ We use DDMemory as the example model to analyze LVOS. For some reasons, DDMemory
 
 Please <a href="https://github.com/LingyiHongfd/lvos-evaluation">our evaluation toolkits</a> to assess your model's result on validation set. See this repository for more details on the usage of toolkits.
 
-For test set, please use the <a href="https://github.com/LingyiHongfd/LVOS">CodaLab</a> server for convenience of evaluating your own algorithms.
+For test set, please use the <a href="https://codalab.lisn.upsaclay.fr/competitions/8767">CodaLab</a> server for convenience of evaluating your own algorithms.
 
 ## License
 
@@ -75,3 +75,12 @@ For test set, please use the <a href="https://github.com/LingyiHongfd/LVOS">Coda
 * All videos and images are from <a href="https://votchallenge.net/vot2019/results.html">VOT-LT 2019</a> and <a href="http://vision.cs.stonybrook.edu/~lasot/">LaSOT </a>, which are not property of Fudan. Fudan is not responsible for the content nor the meaning of these videos and images.
 
 ## Citation
+
+```
+@article{hong2022lvos,
+title={LVOS: A Benchmark for Long-term Video Object Segmentation},
+author={Hong, Lingyi and Chen, Wenchao and Liu, Zhongying and Zhang, Wei and Guo, Pinxue and Chen, Zhaoyu and Zhang, Wenqiang},
+journal={arXiv preprint arXiv:2211.10181},
+year={2022},
+}
+```
