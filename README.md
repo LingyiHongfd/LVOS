@@ -78,9 +78,9 @@ For test set, please use the <a href="https://codalab.lisn.upsaclay.fr/competiti
 
 ```
 @article{hong2022lvos,
-title={LVOS: A Benchmark for Long-term Video Object Segmentation},
-author={Hong, Lingyi and Chen, Wenchao and Liu, Zhongying and Zhang, Wei and Guo, Pinxue and Chen, Zhaoyu and Zhang, Wenqiang},
-journal={arXiv preprint arXiv:2211.10181},
-year={2022},
+    title={LVOS: A Benchmark for Long-term Video Object Segmentation},
+    author={Hong, Lingyi and Chen, Wenchao and Liu, Zhongying and Zhang, Wei and Guo, Pinxue and Chen, Zhaoyu and Zhang, Wenqiang},
+    journal={arXiv preprint arXiv:2211.10181},
+    year={2022},
 }
 ```
