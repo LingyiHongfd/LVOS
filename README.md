@@ -3,6 +3,7 @@
 [<a href="https://lingyihongfd.github.io/lvos.github.io/">Home Page</a>] [<a href="https://arxiv.org/abs/2211.10181">Paper</a>]
 
 LVOS is a benchmark for long-term video object segmentation. LVOS consists of 220 videos, 120 for training(annotations public), 50 for validation(annotations public) and 50 for testing(annotations unpublic). LVOS provides each video with high-quality and dense pixel-wise annotation.
+![LVOS overview](\.picture\picture/one_pic.png)
 
 ## Dataset
 
@@ -60,7 +61,7 @@ x_meta.json
 
 We use DDMemory as the example model to analyze LVOS. For some reasons, DDMemory is unavailable now. (DDMemory will come soon). We take advanteage of <a href="https://github.com/yoxu515/aot-benchmark" target="_blank"> AOT-T </a> as an alternative. You can download the result from <a href="https://drive.google.com/drive/folders/1bGbyNUdbvmQBBezVv_3Fp-5LITMsY2EG?usp=share_link"> Google Drive </a>
 
-Please <a href="https://github.com/LingyiHongfd/lvos-evaluation">our evaluation toolkits</a> to assess your model's result on validation set. See this repository for more details on the usage of toolkits.
+Please our <a href="https://github.com/LingyiHongfd/lvos-evaluation">evaluation toolkits</a> to assess your model's result on validation set. See this repository for more details on the usage of toolkits.
 
 For test set, please use the <a href="https://codalab.lisn.upsaclay.fr/competitions/8767">CodaLab</a> server for convenience of evaluating your own algorithms.
 
