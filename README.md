@@ -3,7 +3,8 @@
 [<a href="https://lingyihongfd.github.io/lvos.github.io/">Home Page</a>] [<a href="https://arxiv.org/abs/2211.10181">Paper</a>]
 
 LVOS is a benchmark for long-term video object segmentation. LVOS consists of 220 videos, 120 for training(annotations public), 50 for validation(annotations public) and 50 for testing(annotations unpublic). LVOS provides each video with high-quality and dense pixel-wise annotation.
-![LVOS overview](\.picture\picture/one_pic.png)
+
+![LVOS overview](./picture/one_pic.png)
 
 ## Dataset
 
