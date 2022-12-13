@@ -12,6 +12,8 @@ Download LVOS dataset from Google Drive ( <a href="https://drive.google.com/file
 
 After unzipping image data, please download meta jsons from <a href="https://drive.google.com/drive/folders/1fOwGggoYNm_GkZIxs68ptHLk4JNF4Ebq?usp=share_link"> Google Drive </a> | <a href="https://pan.baidu.com/s/1_nrMI1cg0X8pt6_GTsRt-w?pwd=osrv"> Baidu Drive</a> | <a href="https://www.kaggle.com/datasets/lingyihong/longterm-vos?select=Test"> Kaggle </a> and put them under corresponding floder.
 
+For the language caption, please download the meta jsons from <a href="https://drive.google.com/drive/folders/1cgIYoIXasw3nx_saYK_M8sb59rtwRFHe?usp=sharing"> Google Drive </a> | <a href="https://pan.baidu.com/s/1nP8PGx2X6LCZQ7NHyRJkVg?pwd=8dl4"> Baidu Drive</a> | <a href="https://www.kaggle.com/datasets/lingyihong/longterm-vos?select=Test"> Kaggle </a> and put them under corresponding floder.
+
 
 
 Organize as follows:
@@ -28,6 +30,7 @@ Organize as follows:
             |-- 00000001.jpg
             |-- ...
     |-- train_meta.json
+    |-- train_expression_meta.json
 |-- val
     |-- ...
 |-- test
@@ -51,11 +54,30 @@ x_meta.json
         }
     }
 
+x_expression_meta.json
+    {
+        "videos": {
+            "<video_id>": {
+                "objects": {
+                    "<object_id>": {
+                        "frame_range": {
+                            "start": <start_frame>,
+                            "end": <end_frame>,
+                            "frame_nums": <frame_nums>
+                        }
+                        "caption": <caption>
+                    }
+                }
+            }
+        }
+    }
+
 # <object_id> is the same as the pixel values of object in annotated segmentation PNG files.
 # <frame_id> is the 5-digit index of frame in video, and not necessary to start from 0.
 # <start_frame> is the  start frame id of target object.
 # <end_frame> is the  end frame id of target object.
 # <frame_nums> is the number of existing frames of target object.
+# <caption> is the expression to describe the target object.
 ```
 
 ## Evaluation
