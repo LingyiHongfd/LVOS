@@ -1,6 +1,6 @@
-# LVOS: A Benchmark for Long-term Video Object Segmentation
+# [ICCV 2023] LVOS: A Benchmark for Long-term Video Object Segmentation
 
-[<a href="https://lingyihongfd.github.io/lvos.github.io/">Home Page</a>] [<a href="https://arxiv.org/abs/2211.10181">Paper</a>]
+[<a href="https://lingyihongfd.github.io/lvos.github.io/">Home Page</a>] [<a href="https://openaccess.thecvf.com/content/ICCV2023/html/Hong_LVOS_A_Benchmark_for_Long-term_Video_Object_Segmentation_ICCV_2023_paper.html">Open Access</a>]  [<a href="https://arxiv.org/abs/2211.10181">arXiv</a>]
 
 LVOS is a benchmark for long-term video object segmentation. LVOS consists of 220 videos, 120 for training(annotations public), 50 for validation(annotations public) and 50 for testing(annotations unpublic). LVOS provides each video with high-quality and dense pixel-wise annotation.
 
@@ -88,6 +88,10 @@ Please our <a href="https://github.com/LingyiHongfd/lvos-evaluation">evaluation 
 
 For test set, please use the <a href="https://codalab.lisn.upsaclay.fr/competitions/8767">CodaLab</a> server for convenience of evaluating your own algorithms.
 
+## APIs
+
+We released the tools and test scripts in this <a href="https://github.com/LingyiHongfd/LVOS-api"> repository</a>. Click on this link for more information.
+
 ## License
 
 - The annotations of LVOS are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 License </a>.
@@ -101,10 +105,12 @@ For test set, please use the <a href="https://codalab.lisn.upsaclay.fr/competiti
 ## Citation
 
 ```
-@article{hong2022lvos,
-    title={LVOS: A Benchmark for Long-term Video Object Segmentation},
-    author={Hong, Lingyi and Chen, Wenchao and Liu, Zhongying and Zhang, Wei and Guo, Pinxue and Chen, Zhaoyu and Zhang, Wenqiang},
-    journal={arXiv preprint arXiv:2211.10181},
-    year={2022},
+InProceedings{Hong_2023_ICCV,
+    author    = {Hong, Lingyi and Chen, Wenchao and Liu, Zhongying and Zhang, Wei and Guo, Pinxue and Chen, Zhaoyu and Zhang, Wenqiang},
+    title     = {LVOS: A Benchmark for Long-term Video Object Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {13480-13492}
 }
 ```
