@@ -15,7 +15,6 @@ Download LVOS V2 dataset from Google Drive ( <a href="https://drive.google.com/f
 
 After unzipping image data, please download meta jsons from <a href="https://drive.google.com/drive/folders/1EtTW57QfSkUK3Jl1A_m9D120muA7NG4L?usp=share_link"> Google Drive </a> | <a href="https://pan.baidu.com/s/1AbmNJJUrLw0TDHwEv90cBw?pwd=vi7n"> Baidu Drive</a> and put them under corresponding floder.  
 
-For the language caption, please download the meta jsons from <a href="https://drive.google.com/drive/folders/19W_SkeVW8NMv3Npzpbr60Nx5FRRwG4Tx?usp=share_link"> Google Drive </a> | <a href="https://pan.baidu.com/s/1nzh6m2s8lzV6p-YEtHr2Zw?pwd=m2ri"> Baidu Drive</a> and put them under corresponding folder.
 
 Organize as follows:
 
@@ -31,7 +30,6 @@ Organize as follows:
             |-- 00000001.jpg
             |-- ...
     |-- train_meta.json
-    |-- train_expression_meta.json
 |-- val
     |-- ...
 |-- test
