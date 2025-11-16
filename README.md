@@ -1,4 +1,4 @@
-# [Arxiv 2024] LVOS: A Benchmark for Large-scale Long-term Video Object Segmentation
+# [T-PAMI 2025] LVOS: A Benchmark for Large-scale Long-term Video Object Segmentation
 # [ICCV 2023] LVOS: A Benchmark for Long-term Video Object Segmentation
 
 [<a href="https://lingyihongfd.github.io/lvos.github.io/">Home Page</a>] [<a href="https://openaccess.thecvf.com/content/ICCV2023/html/Hong_LVOS_A_Benchmark_for_Long-term_Video_Object_Segmentation_ICCV_2023_paper.html">Open Access</a>]  [<a href="https://arxiv.org/abs/2211.10181">arXiv v1</a>] [<a href="https://arxiv.org/abs/2404.19326">arXiv v2</a>]
@@ -195,12 +195,21 @@ We released the tools and test scripts in this <a href="https://github.com/Lingy
 ## Citation
 
 ```
-InProceedings{Hong_2023_ICCV,
-    author    = {Hong, Lingyi and Chen, Wenchao and Liu, Zhongying and Zhang, Wei and Guo, Pinxue and Chen, Zhaoyu and Zhang, Wenqiang},
-    title     = {LVOS: A Benchmark for Long-term Video Object Segmentation},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2023},
-    pages     = {13480-13492}
+# LVOS V2
+@article{hong2025lvos,
+  title={Lvos: A benchmark for large-scale long-term video object segmentation},
+  author={Hong, Lingyi and Liu, Zhongying and Chen, Wenchao and Tan, Chenzhi and Feng, Yuang and Zhou, Xinyu and Guo, Pinxue and Li, Jinglun and Chen, Zhaoyu and Gao, Shuyong and others},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2025},
+  publisher={IEEE}
+}
+
+# LVOS
+@inproceedings{hong2023lvos,
+  title={Lvos: A benchmark for long-term video object segmentation},
+  author={Hong, Lingyi and Chen, Wenchao and Liu, Zhongying and Zhang, Wei and Guo, Pinxue and Chen, Zhaoyu and Zhang, Wenqiang},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={13480--13492},
+  year={2023}
 }
 ```
